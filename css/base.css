@@ -1,4 +1,4 @@
-html, body, div {
+html, body, div, td {
   margin: 0;
   padding: 0;
 }
@@ -114,4 +114,83 @@ ul.center {
 }
 span.time {
   padding-left: 1em;
+}
+
+table#calendar {
+  margin: 0 auto;
+  width: 90%;
+  border: solid 1px #ddd;
+}
+table#calendar td {
+  font-weight: bold;
+  vertical-align: top;
+  border: solid 1px #ddd;
+  height: 50px;
+}
+th.sunday {
+  color: #faa;
+}
+th.satday {
+  color: #aaf;
+}
+td.noLine {
+  border: none;
+}
+td.satday {
+  color: #aaf;
+  background: #eaeaff;
+}
+td.sunday {
+  color: #faa;
+  background: #ffeaea;
+}
+td.today {
+  color: #8d8;
+  background: #eaffea;
+}
+div#contentsMenu {
+  padding: 10px;
+  text-align: right;
+  margin-right: 10px;
+}
+div#ym {
+  font-weight: bold;
+}
+div.cal {
+  display:inline-block;
+  font-size: 24px;
+}
+div.button.min {
+  font-size: 16px;
+  width: 50px;
+  height: 25px;
+  line-height: 1.5;
+}
+div#detail {
+  margin: 10px auto 0 auto;
+  border: solid 2px #ddd;
+  width: 90%;
+  height: 200px;
+  overflow-y: scroll;
+}
+div#detail ul {
+  list-style-type: none;
+  margin: 0 0 0 0;
+  padding-left: 1em;
+  font-size: 20px;
+  line-height: 2;
+}
+div#footer {
+  margin: 10px auto;
+  width: 90%;
+  text-align: center;
+}
+div#footer div {
+  display:inline-block;
+}
+div#edit {
+  margin-right: 10%;
+}
+div#insert {
+  margin-left: 10%;
 }

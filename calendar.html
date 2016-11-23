@@ -5,7 +5,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <link href="./css/base.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript" src="./js/dakoku.js"></script>
+    <script type="text/javascript" src="./js/calendar.js"></script>
     <script type="text/javascript" src="./js/menu.js"></script>
   </head>
   <body>
@@ -27,6 +27,60 @@
         </li>
       </ul>
       <div id="body_wrapper">
+        <div id="contentsMenu">
+          <div id="ym" class="cal">----年--月</div>
+          <div id="prev" class="cal button min green">
+            先月
+          </div>
+          <div id="now" class="cal button min green">
+            今月
+          </div>
+          <div id="next" class="cal button min green">
+            来月
+          </div>
+        </div>
+        <table id="calendar">
+          <thead>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="sunday">日</th>
+              <th>月</th>
+              <th>火</th>
+              <th>水</th>
+              <th>木</th>
+              <th>金</th>
+              <th class="satday">土</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="detail">
+        <ul>
+          <li>
+            出勤時間: 09:00:00
+          </li>
+          <li>
+            退社時間:  18:30:00
+          </li>
+          <li>
+            休憩時間:  1:00
+          </li>
+          <li>
+            欠勤理由:  -
+          </li>
+          <li>
+            備考:  -
+          </li>
+        </ul>
+      </div>
+      <div id="footer">
+        <div id="edit" class="button green">
+          修正
+        </div>
+        <div id="insert" class="button green">
+          申請
+        </div>
       </div>
     </div>
   </body>
