@@ -2,13 +2,49 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8"/>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="./css/base.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="./js/dakoku.js"></script>
+    <script type="text/javascript" src="./js/menu.js"></script>
   </head>
-  <body style="width: 414px; height: 736px; padding: 0; font-size: 16px;">
-    <div style="background: #aaffaa; margin-top: 0; margin-left: 0; margin-right: 0; padding: 10px; font-size: 24px;">
-      <div id="appIcon" style="background: #FFF; width: 20px; height: 20px; float: left;"></div>
-      <div id="title" style="text-align: center; font-weight: bold;">タイトル</div>
-      <div id="drawer" style="background: #FFF; width: 20px; height: 20px; padding-right; 4px"></div>
+  <body>
+    <div id="main_wrapper">
+      <div id="header" class="green">
+        <div id="app_icon" class="icon"><i class="fa fa-calendar-check-o fa-2x" aria-hidden="true"></i></div>
+        <div id="title">打刻</div>
+        <div id="drawer" class="icon"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></div>
+      </div>
+      <ul id="menu">
+        <li id="top">
+          <a href="./index.html">打刻</a>
+        </li>
+        <li id="calendar">
+          <a href="./calendar.html">カレンダー</a>
+        </li>
+        <li id="setting">
+          <a href="./setting.html">設定</a>
+        </li>
+      </ul>
+      <div id="body_wrapper">
+        <div id="date">
+          ----年--月--日 ( - )
+        </div>
+        <div id="time_count">
+          --:--:--
+        </div>
+        <div id="dakoku" class="button entry green">
+          出勤
+        </div>
+        <ul class="center">
+          <li>
+            出勤時間:<span id="entry" class="time"></span>
+          </li>
+          <li>
+            退勤時間:<span id="done" class="time"></span>
+          </li>
+        </ul>
+      </div>
     </div>
   </body>
-  </html>
+</html>
