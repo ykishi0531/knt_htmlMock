@@ -60,6 +60,7 @@ $(function() {
     $('ul>li').click( function () {
       var id = $(this).attr('id');
       var middleJson = $.parseJSON(middleCategory[id]);
+      $('#title').text($(this).text());
       $('ul#categoryList').empty();
       $.map(middleJson, function(data, i) {
         var liTagStr
