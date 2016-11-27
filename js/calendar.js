@@ -83,11 +83,4 @@ $(function() {
       $('tbody').append('<tr><td class="noLine"></td></tr>');
     }
   }
-
-  $("#edit").click(function() {
-    window.location.href = "./application.html";
-  })
-  $("#insert").click(function() {
-    window.location.href = "./application.html";
-  })
 })
