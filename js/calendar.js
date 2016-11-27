@@ -39,7 +39,7 @@ $(function() {
     $('div#ym').text(year + '年' + mon + '月  ');
     createCalendar(year, mon, day);
   })
-  
+
   function createCalendar(y, m, d) {
     $('tr').remove('tr:not(:first)')
     var firstDate = new Date(y, m - 1, 1);
@@ -53,10 +53,12 @@ $(function() {
 
     var trTag;
     var day = 0;
+    var rowCount = 0;
     for( var i = 0; i < lastDay + firstDayOfWeek; i++) {
       if( i == 0 || i % 7 == 0 ) {
         trTag = $('<tr></tr>');
         $('tbody').append(trTag);
+        rowCount++;
       };
       if( i < firstDayOfWeek ) {
         trTag.append('<td class="noLine"></td>');
@@ -77,5 +79,15 @@ $(function() {
       }
       trTag.append('<td class="' + cls + '">' + day + '</td>');
     }
+    for( var i = rowCount; i < 6; i++) {
+      $('tbody').append('<tr><td class="noLine"></td></tr>');
+    }
   }
+
+  $("#edit").click(function() {
+    window.location.href = "./application.html";
+  })
+  $("#insert").click(function() {
+    window.location.href = "./application.html";
+  })
 })
